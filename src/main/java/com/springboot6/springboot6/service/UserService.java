@@ -9,9 +9,9 @@ import java.util.List;
 
 public interface UserService {
 
-    List<User> getAllUsers(); // запрос select
+    List<User> getAllUsers();
     User getUserById (Integer id);
-    void addUser(User user);//запрос update
-    void delete(Integer id); //запрос delete
+    void addUser(User user);
+    void delete(Integer id);
     void updateUser (Integer id, User updateUser);;
 }

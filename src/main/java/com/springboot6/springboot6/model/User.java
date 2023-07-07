@@ -4,10 +4,9 @@ package com.springboot6.springboot6.model;
 import javax.persistence.*;
 
 @Entity //Т.е. этот класс будет отображаться в БД в виде таблицы
-@Table(name = "users")//указываем, к какой именно таблице мы привязываем класс
+@Table(name = "users")
 public class User {
 
-   // @Column не указываем, т.к. названия столбцов совпадают с названиями таблицы в БД
     @Id // Этой аннотацией помечаем, что поле Id - primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) // описывает стратегию по генерации значений д/столбца Id.
     private Integer id;
